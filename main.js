@@ -79,7 +79,7 @@ let perguntaAtual;
 function mostraPergunta() {
     perguntaAtual = perguntas[atual];
     caixaPerguntas.textContent = perguntaAtual.enunciado;
-    mostraPergunta();
+    mostraAlternativas();
 }
 
 function mostraAlternativas() {
@@ -93,4 +93,5 @@ function mostraAlternativas() {
         caixaAlternativas.appendChild(botaoAlternativas);
     }
 }
+
 mostraPergunta();
