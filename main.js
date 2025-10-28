@@ -107,10 +107,11 @@ function respostaSelecionada(opcaoSelecionada) {
     mostraPergunta();
 }
 
-mostraPergunta();
 
 function mostraResultado() {
     caixaPerguntas.textContent = "Se fosse possivel";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
+
+mostraPergunta();
