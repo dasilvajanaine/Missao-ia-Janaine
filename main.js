@@ -101,7 +101,7 @@ let resposta
 mostraPergunta();
 
 function respostaSelecionada(opcaoSelecionada) {
-    const afirmacoes = opcaoSelecionada.afirmacoes;
+    const afirmacoes = opcaoSelecionada.afirmacao;
     historiaFinal += afirmacoes + " ";
     atual++;
     mostraPergunta();
@@ -109,7 +109,7 @@ function respostaSelecionada(opcaoSelecionada) {
 
 
 function mostraResultado() {
-    caixaPerguntas.textContent = "Se fosse possivel";
+    caixaPerguntas.textContent = "Acredito que...";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
